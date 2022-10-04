@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Students.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="28.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Name :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Email :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Point :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="28.0" layoutY="86.0" />
+      <TextField fx:id="txtEmail" layoutX="28.0" layoutY="185.0" />
+      <TextField fx:id="txtPoint" layoutX="28.0" layoutY="289.0" />
+      <ListView fx:id="listView" layoutX="283.0" layoutY="85.0" prefHeight="200.0" prefWidth="600.0" />
+      <Text layoutX="338.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of students">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button onAction="#add" layoutX="28.0" layoutY="340.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Add" />
+      <Button fx:id="sortName" onAction="#sortName" layoutX="323.0" layoutY="325.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Name" />
+      <Button onAction="#sortPoint" layoutX="458.0" layoutY="325.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Point" />
+   </children>
+</Pane>
